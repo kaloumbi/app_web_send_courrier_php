@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoi de message</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <div id="app">
+            <div class="contact-container">
+                <form action="">
+                <h1>Contact</h1>
+                <div class="alert success"></div>
+                <div class="alert fail"></div>
+                <div class="form-group">
+                    <input type="text" name="firstname" id="firstname" placeholder="Votre nom ...">
+                    <input type="text" name="lastname" id="lastname" placeholder="Votre prénom ...">
+                </div>
+                <div class="error firstname"></div>
+                <div class="error lastname"></div>
+                <div class="form-inline">
+                    <input type="email" name="email" id="email" placeholder="Votre email ...">
+                </div>
+                <div class="error email"></div>
+                <div class="form-inline">
+                    <input type="text" name="subject" id="subject" placeholder="Le sujet de votre message ...">
+                </div>
+                <div class="error subject"></div>
+                <div class="form-text flex">
+                    <textarea class="flex-1" name="message" id="message" cols="30" rows="10" placeholder="Votre message ..."></textarea>
+                </div>
+                <div class="error message"></div>
+                <div class="submit flex" id="form_submit"><button class="flex-1">Envoyer</button></div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+    
+</body>
+</html>
